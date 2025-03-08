@@ -14,8 +14,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 40 60% 42%;
-    --primary-foreground: 40 70% 97%;
+    --primary: 174 100% 29%;
+    --primary-foreground: 174 100% 97%;
 
     --secondary: 30 45% 35%;
     --secondary-foreground: 0 0% 98%;
@@ -31,9 +31,9 @@
 
     --border: 35 50% 80%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 40 60% 42%;
+    --ring: 174 100% 29%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -55,8 +55,8 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 40 60% 42%;
-    --primary-foreground: 40 70% 97%;
+    --primary: 174 100% 29%;
+    --primary-foreground: 174 100% 97%;
 
     --secondary: 30 30% 15%;
     --secondary-foreground: 0 0% 98%;
@@ -72,7 +72,7 @@
 
     --border: 35 50% 30%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 40 70% 50%;
+    --ring: 174 100% 29%;
   }
 }
 
@@ -95,19 +95,19 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-gold text-white font-semibold py-3 px-6 rounded-md hover:bg-gold-dark transition-all;
+    @apply bg-teal-DEFAULT text-white font-semibold py-3 px-6 rounded-md hover:bg-teal-dark transition-all shadow-md;
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-center mb-8 text-coffee-dark;
+    @apply text-3xl md:text-4xl font-bold text-center mb-8 text-coffee-dark relative after:content-[''] after:absolute after:left-1/2 after:-bottom-3 after:w-20 after:h-1 after:bg-teal-DEFAULT after:-translate-x-1/2;
   }
   
   .card-hover {
-    @apply transition-transform duration-300 hover:scale-105;
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
   }
   
   .feature-card {
-    @apply bg-white bg-opacity-90 p-6 rounded-md shadow-md flex flex-col items-center text-center;
+    @apply bg-white bg-opacity-90 p-6 rounded-md shadow-md flex flex-col items-center text-center hover:shadow-xl transition-all duration-300;
   }
   
   .course-card {
@@ -116,5 +116,37 @@
   
   .course-card-overlay {
     @apply absolute inset-0 bg-gradient-to-t from-coffee-black/80 to-transparent p-6 flex flex-col justify-end text-white;
+  }
+  
+  .animated-element {
+    @apply opacity-0;
+  }
+  
+  .animated-element.animate {
+    @apply animate-fade-in;
+  }
+  
+  .animated-slide {
+    @apply opacity-0;
+  }
+  
+  .animated-slide.animate {
+    @apply animate-slide-in;
+  }
+  
+  .animated-slide-up {
+    @apply opacity-0;
+  }
+  
+  .animated-slide-up.animate {
+    @apply animate-slide-up;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+  
+  .social-icon {
+    @apply bg-white rounded-full p-2 text-teal-DEFAULT hover:text-gold hover:bg-teal-light transition-colors shadow-md transform transition-transform hover:-translate-y-1;
   }
 }
