@@ -38,7 +38,7 @@ export default {
 				},
 				teal: {
 					light: '#e0f2f1',
-					DEFAULT: '#009688',
+					DEFAULT: '#009688', // This is defined correctly, but we'll use primary instead
 					dark: '#00796b',
 				},
 				primary: {

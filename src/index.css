@@ -95,11 +95,11 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-teal-DEFAULT text-white font-semibold py-3 px-6 rounded-md hover:bg-teal-dark transition-all shadow-md;
+    @apply bg-primary text-white font-semibold py-3 px-6 rounded-md hover:bg-primary/90 transition-all shadow-md;
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-center mb-8 text-coffee-dark relative after:content-[''] after:absolute after:left-1/2 after:-bottom-3 after:w-20 after:h-1 after:bg-teal-DEFAULT after:-translate-x-1/2;
+    @apply text-3xl md:text-4xl font-bold text-center mb-8 text-coffee-dark relative after:content-[''] after:absolute after:left-1/2 after:-bottom-3 after:w-20 after:h-1 after:bg-primary after:-translate-x-1/2;
   }
   
   .card-hover {
@@ -147,6 +147,6 @@
   }
   
   .social-icon {
-    @apply bg-white rounded-full p-2 text-teal-DEFAULT hover:text-gold hover:bg-teal-light transition-colors shadow-md transform transition-transform hover:-translate-y-1;
+    @apply bg-white rounded-full p-2 text-primary hover:text-accent hover:bg-teal-light transition-colors shadow-md transform transition-transform hover:-translate-y-1;
   }
 }

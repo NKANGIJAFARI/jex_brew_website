@@ -29,7 +29,7 @@ const Hero = () => {
             className={`text-5xl md:text-7xl font-bold mb-6 text-white leading-tight ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}
             style={{ animationDelay: '0.2s' }}
           >
-            BECOME A <span className="text-teal-DEFAULT">SPECIALTY</span> PRO BARISTA
+            BECOME A <span className="text-primary">SPECIALTY</span> PRO BARISTA
           </h1>
           <p 
             className={`text-xl mb-8 text-white/90 max-w-xl ${isVisible ? 'animate-slide-in' : 'opacity-0'}`}
