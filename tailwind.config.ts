@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,6 +25,17 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				coffee: {
+					light: '#d4b996',
+					DEFAULT: '#9b7653',
+					dark: '#5d4037',
+					black: '#362517',
+				},
+				gold: {
+					light: '#f9f3e1',
+					DEFAULT: '#d4af37',
+					dark: '#9a7d0a',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -89,6 +101,11 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			backgroundImage: {
+				'hero-pattern': "url('/public/lovable-uploads/f6ea5d3f-9c7a-4f75-a471-ffbd837fb531.png')",
+				'coffee-beans': "url('/src/assets/coffee-beans-bg.jpg')",
+				'paper-texture': "linear-gradient(rgba(249, 243, 225, 0.8), rgba(249, 243, 225, 0.8)), url('/src/assets/paper-texture.jpg')",
 			}
 		}
 	},
