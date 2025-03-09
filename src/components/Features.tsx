@@ -9,7 +9,7 @@ const features = [
   },
   {
     icon: <Clock className="h-10 w-10 text-gold" />,
-    title: "FLEXIBLE SCHEDULING WITH 7-DAY SESSIONS",
+    title: "FLEXIBLE SCHEDULING WITH DAILY SESSIONS",
     description: "Choose schedule that fits your lifestyle"
   },
   {

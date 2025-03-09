@@ -16,7 +16,7 @@ const Hero = () => {
       id="home" 
       className="relative min-h-[90vh] flex items-center"
       style={{
-        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('/lovable-uploads/f6ea5d3f-9c7a-4f75-a471-ffbd837fb531.png')",
+        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('/assets/herobackground.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -24,12 +24,14 @@ const Hero = () => {
     >
       <div className="absolute inset-0 bg-gradient-to-r from-coffee-black/70 via-transparent to-transparent"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-2xl text-left">
+        <div className=" text-left">
           <h1 
             className={`text-5xl md:text-7xl font-bold mb-6 text-white leading-tight ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}
             style={{ animationDelay: '0.2s' }}
           >
-            BECOME A <span className="text-primary">SPECIALTY</span> PRO BARISTA
+            BECOME A<br/>
+            <span className="text-primary">SPECIALTY COFFEE PRO</span><br />
+            BARISTA & ROASTER COURSES
           </h1>
           <p 
             className={`text-xl mb-8 text-white/90 max-w-xl ${isVisible ? 'animate-slide-in' : 'opacity-0'}`}
