@@ -44,11 +44,11 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-6 card-hover">
               <div className="flex justify-center mb-4">
-                <img 
+                {/* <img 
                   src={testimonial.avatar} 
                   alt={testimonial.name} 
                   className="h-16 w-16 rounded-full object-cover border-2 border-gold"
-                />
+                /> */}
               </div>
               <h3 className="font-bold text-center">{testimonial.name}</h3>
               <p className="text-sm text-center text-coffee mb-2">{testimonial.role}</p>

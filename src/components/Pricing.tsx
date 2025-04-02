@@ -46,14 +46,14 @@ const Pricing = () => {
           {/* Barista Course Pricing */}
           <div className="bg-white rounded-lg shadow-xl overflow-hidden">
             <div className="bg-gold p-6 text-center">
-              <div className="inline-block rounded-full bg-white p-2 mb-4">
-                <img src="/assets/logo.png" alt="Logo" className="h-10 w-10" />
+              <div className="inline-block rounded-full bg-white p-1  mb-4">
+                <img   src="/barista.jpg"  alt="Logo" className="h-20 w-20 rounded-full" />
               </div>
               <h3 className="text-2xl font-bold text-white">Complete Barista Course</h3>
               <div className="mt-4 mb-2">
                 <span className="text-sm text-white/80">Starting at</span>
                 <div className="flex items-baseline justify-center">
-                  <span className="text-4xl font-bold text-white">$1,999</span>
+                  <span className="text-4xl font-bold text-white">AED 1999</span>
                   <span className="text-white/80 ml-1">/person</span>
                 </div>
               </div>
@@ -90,14 +90,14 @@ const Pricing = () => {
           {/* Roastery Course Pricing */}
           <div className="bg-white rounded-lg shadow-xl overflow-hidden">
             <div className="bg-coffee-dark p-6 text-center">
-              <div className="inline-block rounded-full bg-white p-2 mb-4">
-                <img src="/assets/logo.png" alt="Logo" className="h-10 w-10" />
+              <div className="inline-block rounded-full bg-white p-1 mb-4">
+                <img   src="/roastery.jpg"  alt="Logo" className="h-20 w-20 rounded-full" />
               </div>
               <h3 className="text-2xl font-bold text-white">Coffee Roasting Course</h3>
               <div className="mt-4 mb-2">
                 <span className="text-sm text-white/80">Starting at</span>
                 <div className="flex items-baseline justify-center">
-                  <span className="text-4xl font-bold text-white">$2,499</span>
+                  <span className="text-4xl font-bold text-white">AED 9999</span>
                   <span className="text-white/80 ml-1">/person</span>
                 </div>
               </div>

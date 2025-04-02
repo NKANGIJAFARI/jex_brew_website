@@ -93,12 +93,12 @@ const EnrollForm = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="John Doe"
+                  // placeholder="John Doe"
                   required
                   className="w-full"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-1">Email Address</label>
                 <Input
@@ -107,7 +107,7 @@ const EnrollForm = () => {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="john@example.com"
+                  // placeholder="john@example.com"
                   required
                   className="w-full"
                 />
@@ -120,7 +120,7 @@ const EnrollForm = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="(123) 456-7890"
+                  // placeholder="(123) 456-7890"
                   required
                   className="w-full"
                 />

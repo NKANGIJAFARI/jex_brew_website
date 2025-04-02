@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -25,19 +24,21 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-coffee-black/70 via-transparent to-transparent"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className=" text-left">
-          <h1 
-            className={`text-5xl md:text-7xl font-bold mb-6 text-white leading-tight ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}
-            style={{ animationDelay: '0.2s' }}
-          >
-            BECOME A<br/>
-            <span className="text-primary">SPECIALTY COFFEE PRO</span><br />
-            BARISTA & ROASTER COURSES
-          </h1>
+          <h1
+        className={`text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        style={{ animationDelay: '0.2s' }}
+      >
+      <span>
+        ☕ Barista & Roaster <span className="text-primary">Courses In Dubai</span>
+      </span>
+        <span className="block">Master the Art of Specialty Coffee.</span>
+      </h1>
           <p 
-            className={`text-xl mb-8 text-white/90 max-w-xl ${isVisible ? 'animate-slide-in' : 'opacity-0'}`}
+            className={`text-lg sm:text-xl mb-8 text-white/90 max-w-4xl ${isVisible ? 'animate-slide-in' : 'opacity-0'}`}
             style={{ animationDelay: '0.5s' }}
           >
-            Our expert-led barista training courses teach you everything from espresso basics to latte art mastery. Join thousands of successful students worldwide.
+            Our expert-led barista training courses teach you everything from espresso basics to latte art mastery. 
+            🔥 Learn from Experts | Get Certified | Elevate Your Coffee Game. Join today and become a Specialty Coffee Pro!
           </p>
           <div 
             className={`flex flex-col sm:flex-row gap-4 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}

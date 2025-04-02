@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const CourseInfo = () => {
+  const navigate = useNavigate();
+  
   return (
     <section id="course" className="py-16">
       <div className="container mx-auto px-4">
@@ -11,7 +14,7 @@ const CourseInfo = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
           <div className="rounded-lg overflow-hidden shadow-xl">
             <img 
-              src="/lovable-uploads/f6ea5d3f-9c7a-4f75-a471-ffbd837fb531.png" 
+              src="/barista.jpg" 
               alt="Barista Training Course" 
               className="w-full h-64 object-cover"
             />
@@ -28,7 +31,12 @@ const CourseInfo = () => {
               <p className="text-gray-600 mb-4">
                 This immersive, hands-on course provides a comprehensive foundation in specialty coffee preparation techniques.
               </p>
-              <Button className="btn-primary w-full">ENROLL NOW</Button>
+              <Button 
+                className="btn-primary w-full" 
+                onClick={() => navigate('/courses/barista')}
+              >
+                ENROLL NOW
+              </Button>
             </div>
           </div>
           
@@ -57,7 +65,12 @@ const CourseInfo = () => {
               </li>
             </ul>
             
-            <Button className="btn-primary self-start">ENROLL TODAY</Button>
+            <Button 
+              className="btn-primary self-start"
+              onClick={() => navigate('/courses/barista')}
+            >
+              ENROLL TODAY
+            </Button>
           </div>
         </div>
         
@@ -65,7 +78,7 @@ const CourseInfo = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="rounded-lg overflow-hidden shadow-xl">
             <img 
-              src="/assets/coffee-beans-bg.jpg" 
+              src="/roastery.jpg" 
               alt="Coffee Roasting Course" 
               className="w-full h-64 object-cover"
             />
@@ -82,7 +95,12 @@ const CourseInfo = () => {
               <p className="text-gray-600 mb-4">
                 Dive deep into the art and science of coffee roasting with our comprehensive roastery training program.
               </p>
-              <Button className="btn-primary w-full">ENROLL NOW</Button>
+              <Button 
+                className="btn-primary w-full" 
+                onClick={() => navigate('/courses/roastery')}
+              >
+                ENROLL NOW
+              </Button>
             </div>
           </div>
           
@@ -111,7 +129,12 @@ const CourseInfo = () => {
               </li>
             </ul>
             
-            <Button className="btn-primary self-start">ENROLL TODAY</Button>
+            <Button 
+              className="btn-primary self-start"
+              onClick={() => navigate('/courses/roastery')}
+            >
+              ENROLL TODAY
+            </Button>
           </div>
         </div>
       </div>

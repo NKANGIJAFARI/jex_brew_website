@@ -1,16 +1,15 @@
-
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 const courses = [
   {
     title: "COFFEE BASICS",
-    image: "/src/assets/coffee-basics.jpg",
+    image: "/assets/coffee-basics.jpg",
     items: [
-      "Coffee origins",
+      "Bean varieties",
+      "Growing regions",
       "Processing methods",
-      "Roasting profiles",
-      "Cupping techniques"
+      "Roast profiles"
     ]
   },
   {
@@ -45,11 +44,11 @@ const courses = [
   },
   {
     title: "BREWING METHODS",
-    image: "/src/assets/brewing-methods.jpg",
+    image: "/assets/brewing-methods.jpg",
     items: [
-      "Pour over",
+      "Espresso extraction",
+      "Pour over techniques",
       "French press",
-      "Aeropress",
       "Cold brew"
     ]
   },
@@ -64,10 +63,11 @@ const courses = [
     ]
   },
   {
-    title: "EQUIPMENT",
-    image: "/src/assets/equipment.jpg",
+    title: "EQUIPMENT MASTERY",
+    image: "/assets/equipment.jpg",
     items: [
-      "Machine maintenance",
+      "Machine operation",
+      "Grinder calibration",
       "Daily cleaning",
       "Troubleshooting",
       "Equipment selection"
@@ -75,7 +75,7 @@ const courses = [
   },
   {
     title: "SENSORY SKILLS",
-    image: "/src/assets/sensory-skills.jpg",
+    image: "/assets/sensory-skills.jpg",
     items: [
       "Flavor identification",
       "Aroma recognition",
