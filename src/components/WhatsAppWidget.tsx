@@ -4,7 +4,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 const WhatsAppWidget = () => {
   return (
     <FloatingWhatsApp
-      phoneNumber='+971507763533'
+      phoneNumber='+97150776353'
       accountName='Brews Academy'
       notification
       notificationDelay={60000}

@@ -1,54 +1,51 @@
-
+import { motion } from "framer-motion";
 import { PlayCircle } from "lucide-react";
-import { useEffect, useState, useRef } from "react";
 
 const StudentVideos = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
-  
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      {
-        root: null,
-        threshold: 0.2,
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
       }
-    );
-    
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
     }
-    
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut"
       }
-    };
-  }, []);
+    }
+  };
 
   return (
-    <section 
+    <motion.section 
       id="testimonials" 
-      className="py-20 bg-gradient-to-b from-white to-teal-light/30"
-      ref={sectionRef}
+      className="py-24 bg-gradient-to-b from-white to-coffee-dark/10"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+      variants={containerVariants}
     >
       <div className="container mx-auto px-4">
-        <h2 className={`section-title ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          WHAT OUR STUDENTS SAY
-        </h2>
-        <p className={`text-center text-coffee-dark/80 max-w-2xl mx-auto mb-12 ${isVisible ? 'animate-slide-in' : 'opacity-0'}`} style={{ animationDelay: '0.3s' }}>
-          Hear directly from our graduates about their experiences with our barista training program and how it has transformed their careers.
-        </p>
+        <motion.h2 
+          className="section-title mb-16 text-center text-4xl font-bold bg-gradient-to-r from-coffee-dark to-gold bg-clip-text text-transparent"
+          variants={itemVariants}
+        >
+          STUDENT SUCCESS STORIES
+        </motion.h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div 
-            className={`relative rounded-xl overflow-hidden shadow-xl group cursor-pointer transform transition-all duration-300 hover:-translate-y-2 ${isVisible ? 'animate-slide-in' : 'opacity-0'}`}
-            style={{ animationDelay: '0.5s' }}
+          <motion.div 
+            className="relative rounded-xl overflow-hidden shadow-xl group cursor-pointer"
+            variants={itemVariants}
+            whileHover={{ y: -5 }}
           >
             <img 
               src="/src/assets/student1.jpg" 
@@ -60,11 +57,12 @@ const StudentVideos = () => {
               <h3 className="text-white text-xl font-bold">Jessica's Journey</h3>
               <p className="text-teal-light text-sm">From Student to Cafe Owner</p>
             </div>
-          </div>
+          </motion.div>
           
-          <div 
-            className={`relative rounded-xl overflow-hidden shadow-xl group cursor-pointer transform transition-all duration-300 hover:-translate-y-2 ${isVisible ? 'animate-slide-in' : 'opacity-0'}`}
-            style={{ animationDelay: '0.7s' }}
+          <motion.div 
+            className="relative rounded-xl overflow-hidden shadow-xl group cursor-pointer"
+            variants={itemVariants}
+            whileHover={{ y: -5 }}
           >
             <img 
               src="/src/assets/student2.jpg" 
@@ -76,10 +74,10 @@ const StudentVideos = () => {
               <h3 className="text-white text-xl font-bold">Michael's Story</h3>
               <p className="text-teal-light text-sm">International Barista Champion</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
