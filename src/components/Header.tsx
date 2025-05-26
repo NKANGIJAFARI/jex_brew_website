@@ -1,17 +1,19 @@
+'use client';
+
 import { Menu, PhoneCall, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const handleNavigation = (path: string) => {
     if (path.startsWith('#')) {
       // If it's a hash link, navigate to homepage first if not already there
       if (window.location.pathname !== '/') {
-        navigate('/');
+        router.push('/');
         // Add a small delay to allow navigation to complete before scrolling
         setTimeout(() => {
           const element = document.querySelector(path);
@@ -24,7 +26,7 @@ const Header = () => {
       }
     } else {
       // If it's a route path, use navigate
-      navigate(path);
+      router.push(path);
     }
     
     // Close mobile menu when link is clicked
