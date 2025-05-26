@@ -45,10 +45,18 @@ const Pricing = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Barista Course Pricing */}
           <div className="bg-white rounded-lg shadow-xl overflow-hidden">
-            <div className="bg-gold p-6 text-center">
-              <div className="inline-block rounded-full bg-white p-1  mb-4">
-                <img   src="/barista.jpg"  alt="Logo" className="h-20 w-20 rounded-full" />
-              </div>
+            <div 
+              className="p-6 text-center relative"
+              style={{
+                backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/barista.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                minHeight: "300px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center"
+              }}
+            >
               <h3 className="text-2xl font-bold text-white">Complete Barista Course</h3>
               <div className="mt-4 mb-2">
                 <span className="text-sm text-white/80">Starting at</span>
@@ -89,10 +97,18 @@ const Pricing = () => {
           
           {/* Roastery Course Pricing */}
           <div className="bg-white rounded-lg shadow-xl overflow-hidden">
-            <div className="bg-coffee-dark p-6 text-center">
-              <div className="inline-block rounded-full bg-white p-1 mb-4">
-                <img   src="/roastery.jpg"  alt="Logo" className="h-20 w-20 rounded-full" />
-              </div>
+            <div 
+              className="p-6 text-center relative"
+              style={{
+                backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/roastery.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                minHeight: "300px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center"
+              }}
+            >
               <h3 className="text-2xl font-bold text-white">Coffee Roasting Course</h3>
               <div className="mt-4 mb-2">
                 <span className="text-sm text-white/80">Starting at</span>
