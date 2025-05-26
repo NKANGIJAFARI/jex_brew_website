@@ -15,13 +15,13 @@
       "static/css/b66789093fb11d54.css",
       "static/chunks/app/layout-70e447a4c980321e.js"
     ],
-    "/courses/roastery/page": [
+    "/courses/barista/page": [
       "static/chunks/webpack-9d964d8cb0d81fe9.js",
       "static/chunks/fd9d1056-729ec592c003a9f8.js",
       "static/chunks/117-c9101765f34749fe.js",
       "static/chunks/main-app-b859b76ac4ddcf86.js",
       "static/chunks/499-2985c6cb2de90c85.js",
-      "static/chunks/app/courses/roastery/page-f64ac197f3e0b96e.js"
+      "static/chunks/app/courses/barista/page-79f13b0d881eb893.js"
     ],
     "/courses/layout": [
       "static/chunks/webpack-9d964d8cb0d81fe9.js",
@@ -30,13 +30,13 @@
       "static/chunks/main-app-b859b76ac4ddcf86.js",
       "static/chunks/app/courses/layout-6f18500fffb6a138.js"
     ],
-    "/courses/barista/page": [
+    "/courses/roastery/page": [
       "static/chunks/webpack-9d964d8cb0d81fe9.js",
       "static/chunks/fd9d1056-729ec592c003a9f8.js",
       "static/chunks/117-c9101765f34749fe.js",
       "static/chunks/main-app-b859b76ac4ddcf86.js",
       "static/chunks/499-2985c6cb2de90c85.js",
-      "static/chunks/app/courses/barista/page-79f13b0d881eb893.js"
+      "static/chunks/app/courses/roastery/page-f64ac197f3e0b96e.js"
     ]
   }
 }
