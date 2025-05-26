@@ -39,8 +39,8 @@ const Header = () => {
             className="text-2xl font-bold text-coffee-dark flex items-center gap-2 cursor-pointer"
             onClick={() => handleNavigation('/')}
           >
-            {/* <img src="/assets/logo.png" alt="Brew Masters Logo" className="h-10" /> */}
-            <span>Brew Masters</span>
+            {/* <img src="/assets/logo.png" alt="Brews Academy Logo" className="h-10" /> */}
+            <span>Brews Academy</span>
           </div>
         </div>
         

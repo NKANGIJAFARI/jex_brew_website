@@ -39,7 +39,7 @@ const EnrollForm = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-6 text-coffee-dark">START YOUR JOURNEY WITH BREW MASTERS TODAY</h2>
+            <h2 className="text-3xl font-bold mb-6 text-coffee-dark">START YOUR JOURNEY WITH Brews Academy TODAY</h2>
             <p className="mb-6 text-coffee-dark">
               Fill out the form to receive detailed information about our upcoming barista training courses. Our team will contact you to discuss availability, prerequisites, and payment options.
             </p>

@@ -32,7 +32,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">ABOUT US</h3>
             <p className="text-gray-300 mb-4">
-              Brew Masters is a premier specialty coffee training academy dedicated to developing skilled baristas for the coffee industry.
+              Brews Academy is a premier specialty coffee training academy dedicated to developing skilled baristas for the coffee industry.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-gold transition-colors">
@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} Brew Masters. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Brews Academy. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
